@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kcisa 문화 공공데이터 API 활용</title>
+
+    <link rel="stylesheet" th:href="@{/css/testCode/testCode.css}">
+
+</head>
+<body>
+
+    <!-- Thymeleaf에서는 th:href, th:src, th:action 등 속성 값이 기본적으로 표현식으로 해석됩니다.
+        ${...} → Model 값 주입
+        @{...} → URL 경로로 해석
+        #{...} → 메시지 번들
+    -->
+    <section>
+        <div>
+            test code :
+            <select id="selectTestCode">
+                <!-- HTML 표준에서 <option> 태그 안에 인터랙티브 요소(<a>, <button>, <input> 등)를 넣는 걸 허용하지 않음 ->  bypass -->
+                <!-- 방법1: 그냥 문자열(고정값)로 쓰고 싶다면
+                <option value="/sandbox/code1">코드1</option>
+                <option value="/sandbox/code2">코드2</option>
+                <option value="/sandbox/code3">코드3</option> -->
+
+                <!-- 방법2: Thymeleaf URL 처리 기능을 쓰고 싶다면
+                 (Spring MVC 경로로 매핑된 URL을 따라가야 한다면) -->
+                <!--<option th:value="@{/sandbox/code1}">코드1</option>
+                <option th:value="@{/sandbox/code2}">코드2</option>-->
+                <option th:value="@{/sandbox/code3}">API2DTO</option>
+                <option th:value="@{/sandbox/code4}">loading MockSM209</option>
+                <!--<option th:value="@{/sandbox/code5}">loading MockLG6838</option>-->
+                <option th:value="@{/sandbox/code6}">loading MockSM209_상대경로_controller폴더</option>
+                <option th:value="@{/sandbox/code7}">API2DTO_rev1</option>
+
+            </select>
+            <button id="selectBtn2">실행</button>
+            <!--  ex) selectBtn2 클릭시 JS에서 location.href로 /testCode/code1로 요청보내기 햐여 서버 api 요청 수행시켜 결과를 다시 반환받는다. -->
+        </div>
+
+        <div class="result-container">
+            <!-- code test result -->
+            <div class="result-row">
+                <!-- <div id="result-code1">[  [${varItemList}]  ]</div> -->
+                <div id="result-code1">[[${varItemList}]]</div>
+                <div id="result-code2"></div>
+                <div id="result-code3"></div>
+            </div>
+        </div>
+    </section>       
+
+    <script th:src="@{/js/testCode/testCode.js}"> </script>
+
+</body>
+</html>

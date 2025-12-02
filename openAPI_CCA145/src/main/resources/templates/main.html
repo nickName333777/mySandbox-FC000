@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kcisa 문화 공공데이터 API 활용</title>
+
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+
+</head>
+<body>
+    <h1>문화 공공데이터 전시 정보 조회(서버 API 요청 )</h1>
+
+    <section>
+        <div class="menu-container">
+            <div class="query-container">
+                조회량 :
+                <select id="queryKey">
+                    <option>300items조회</option>
+                  <!--  <option>예술의 전당</option>
+                    <option>국립현대미술관</option>
+                    <option>독립기념관</option> -->
+    
+                </select>
+                <button id="selectBtn">조회</button>
+            </div>
+            <div id="placeholder-container">placeholder</div>
+            <div id="testcode-container">
+                <a href="/testCode/testCode">testCode</a>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <!-- 문화 공공테이터 광장 - 전시 데이터 베이스 -->
+            <div class="result-row">
+                <div id="title"></div>
+                <div id="institutionName"></div>
+                <div id="collectDate"></div>
+                <div id="issueDate"></div>
+                <div id="description"></div>
+                <div id="localId"></div>
+                <div id="url"></div>
+                <div id="viewCount"></div>
+                <div id="subDescriptioin"></div>
+                <div id="spacialCoverage"></div>
+                <div id="eventSite"></div>
+                <div id="genre"></div>
+                <div id="duration"></div>
+                <div id="numberPages"></div>
+                <div id="tableOfContents"></div>
+                <div id="author"></div>
+                <div id="contactPoint"></div>
+                <div id="actor"></div>
+                <div id="url"></div>
+                <div id="contribution"></div>
+                <div id="audience"></div>
+                <div id="charge"></div>
+                <div id="period"></div>
+                <div id="eventPeriod"></div>
+            </div>
+        </div>
+    </section>   
+
+    <script th:src="@{/js/main.js}"> </script>
+
+</body>
+</html>
