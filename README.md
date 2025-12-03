@@ -30,5 +30,5 @@
 < 예시: 전시 DB생성을 위해 Json으로 수집한 API 공공 데이터를 1차 가공/변환 > <br> 
 <img width="590" height="506" alt="kcisa 문화 공공데이터 API 활용 - Google Chrome_003" src="https://github.com/user-attachments/assets/c3a9c15a-8b75-4788-b2ed-dc16c99cbadb" />
 
-- 옵션: loading MockSM209 =>  209건의 API 전시데이터를 로딩하여 화면에서 확인<br>
-- 옵션: API2DTO, API2DTO_rev => 209건의 API 전시데이터를 DTO 형식으로 가공/저장<br>
+- 옵션: loading MockSM209 =>  가공/변환된 209건의 API 전시데이터를 로딩하여 화면에서 확인<br>
+- 옵션: API2DTO, API2DTO_rev => 209건의 API 전시데이터를 DTO 형식으로 가공/저장(화면에 출력된 결과로 내용확인) <br>
