@@ -16,7 +16,7 @@
 
 
 앱 실행: <br>
-- 요청주소 "http://localhost:8086/"를 주소창에 입력 <br>
+- 요청주소 "http://localhost:8086/" 를 주소창에 입력 <br>
 - 메인화면에서 "조회"버튼을 누르면 300 건의 전시데이터를 json형식으로 수집 <br>
 - API key 필요: 문화 공공데이터 광장 페이지에서 API 활용신청 해야함 (https://www.culture.go.kr/data/openapi/openapiView.do?id=598&category=I&gubun=B#/default/%EC%9A%94%EC%B2%AD%EB%A9%94%EC%8B%9C%EC%A7%80%20Get) <br>
 
